@@ -104,7 +104,6 @@ fn main() {
         Err(e) => eprintln!("Error retrieving Disk info: {}", e),
     }
 
-    // Keep the console window open
     print!("\nPress Enter to exit...");
     io::stdout().flush().unwrap();
     let _ = io::stdin().read_line(&mut String::new());
